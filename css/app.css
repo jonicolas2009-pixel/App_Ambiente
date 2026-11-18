@@ -672,3 +672,7 @@ body:has(.chat-page) .fab { display: none; }
 
 .actions-bar { margin-top: 24px; }
 .list > .person { padding: 8px 0; }
+
+/* Opciones de las listas desplegables legibles en ambos temas (Windows/Chrome) */
+select.input option, select.input optgroup { background-color: #111114; color: #ffffff; }
+[data-theme='light'] select.input option, [data-theme='light'] select.input optgroup { background-color: #ffffff; color: #000000; }

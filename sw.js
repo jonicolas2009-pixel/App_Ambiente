@@ -1,6 +1,6 @@
 // Service worker de Maqnex: permite instalar la app y abrirla sin conexión.
 // Solo guarda los archivos de la app; NUNCA guarda datos de la base de datos ni sesiones.
-const VERSION = 'maqnex-v1';
+const VERSION = 'maqnex-v2';
 const SHELL = [
   './', './index.html', './manifest.webmanifest', './css/app.css',
   './js/theme-init.js', './js/app.js', './js/config.js', './js/supabase.js', './js/ui.js', './js/state.js',
