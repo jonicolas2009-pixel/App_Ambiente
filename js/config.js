@@ -9,8 +9,8 @@
 //     La app se niega a arrancar si detecta una de esas claves.
 // =====================================================================
 export const CONFIG = {
-  SUPABASE_URL: 'https://TU-PROYECTO.supabase.co',
-  SUPABASE_ANON_KEY: 'PEGA-AQUI-TU-CLAVE-PUBLICA',
+  SUPABASE_URL: 'https://pxfvrhrearzsqbbvjtis.supabase.co',
+  SUPABASE_ANON_KEY: 'sb_publishable_q0dlfQ4VZhHXR5GL3NCaPQ_t_CbAgMV',
 
   // Opcional: protección anti-bots con Cloudflare Turnstile.
   // Si la activas en Supabase (Authentication → Attack Protection),
