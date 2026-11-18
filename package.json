@@ -1,0 +1,14 @@
+{
+  "name": "maqnex",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Maqnex: mantenimiento preventivo de maquinaria (PWA + Supabase).",
+  "scripts": {
+    "start": "npx --yes serve -l 5173 .",
+    "check:secrets": "node scripts/check-secrets.mjs"
+  },
+  "dependencies": {
+    "@supabase/supabase-js": "^2.45.0"
+  },
+  "license": "UNLICENSED"
+}

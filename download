@@ -1,0 +1,10 @@
+# Nunca subir secretos ni dependencias
+.env
+.env.*
+*.local
+*.pem
+*.key
+node_modules/
+supabase/.temp/
+.DS_Store
+Thumbs.db

@@ -1,0 +1,42 @@
+# Revisión automática de seguridad en cada cambio y cada lunes.
+name: Seguridad
+
+on:
+  push:
+  pull_request:
+  schedule:
+    - cron: '17 11 * * 1'
+
+permissions:
+  contents: read
+
+jobs:
+  secretos:
+    name: Buscar secretos (código e historial de Git)
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0   # todo el historial, no solo el último commit
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - name: Claves de Supabase en el código
+        run: node scripts/check-secrets.mjs
+      - name: Gitleaks (todo el historial)
+        uses: gitleaks/gitleaks-action@v2
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+  dependencias:
+    name: Escanear dependencias
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - name: npm audit
+        run: |
+          npm install --package-lock-only --ignore-scripts --no-audit
+          npm audit --audit-level=high

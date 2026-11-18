@@ -1,0 +1,24 @@
+{
+  "name": "Maqnex · Mantenimiento que se anticipa",
+  "short_name": "Maqnex",
+  "description": "Mantenimiento preventivo de maquinaria para una planta de bebidas.",
+  "lang": "es",
+  "start_url": "./#/inicio",
+  "scope": "./",
+  "display": "standalone",
+  "orientation": "any",
+  "background_color": "#000000",
+  "theme_color": "#000000",
+  "categories": ["productivity", "business"],
+  "icons": [
+    { "src": "icons/icon-192.png", "sizes": "192x192", "type": "image/png" },
+    { "src": "icons/icon-512.png", "sizes": "512x512", "type": "image/png" },
+    { "src": "icons/maskable-512.png", "sizes": "512x512", "type": "image/png", "purpose": "maskable" },
+    { "src": "icons/icon.svg", "sizes": "any", "type": "image/svg+xml" }
+  ],
+  "shortcuts": [
+    { "name": "Máquinas", "url": "./#/maquinas" },
+    { "name": "Órdenes", "url": "./#/ordenes" },
+    { "name": "Canales", "url": "./#/canales" }
+  ]
+}
