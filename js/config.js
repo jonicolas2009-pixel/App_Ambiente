@@ -19,7 +19,7 @@ export const CONFIG = {
 
   // Datos que aparecen en los Términos y condiciones.
   RESPONSABLE: 'Equipo Maqnex (proyecto académico)',
-  CONTACT_EMAIL: 'tu-correo@ejemplo.com',
+  CONTACT_EMAIL: 'juanangelgb.1234@gmail.com',
 
   // Si cambias los términos, sube la versión: todos deberán aceptarlos de nuevo.
   TERMS_VERSION: 'v1-2026-11',
